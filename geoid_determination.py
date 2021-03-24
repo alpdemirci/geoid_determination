@@ -38,7 +38,7 @@ def adjustment(cp):
     X = (AT * A) ** (-1) * (AT * L)
 
     # Textfile including unknown matrix X
-    txtfile = np.savetxt('10160617_katsayilarmatrisi.txt', A, fmt='%.5f')
+    txtfile = np.savetxt('coefficient_matrix.txt', A, fmt='%.5f')
     # Correction values stored in matrice V
     V = A * X - L
 
